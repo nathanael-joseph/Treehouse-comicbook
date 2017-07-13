@@ -19,7 +19,7 @@ namespace ComicBookGallery.Controllers
 
         public ActionResult Index()
         {
-            var comicBooks = _comicBookRepository;
+            var comicBooks = _comicBookRepository.GetComicBooks();
             return View(comicBooks);
         }
 
